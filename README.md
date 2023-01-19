@@ -1,4 +1,4 @@
-# devnolife
+# by devnolife
 ## _SIMPLE CRUD NODEJS WITH PRISMA JS_
 ![Prisma](https://i.imgur.com/h6UIYTu.png)
 
