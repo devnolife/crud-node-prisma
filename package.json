@@ -1,0 +1,22 @@
+{
+  "name": "crud-node-prisma",
+  "version": "1.0.0",
+  "description": "![Prisma](https://i.imgur.com/h6UIYTu.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodevnolife/crud-node-prisma.git"
+  },
+  "author": "devnolife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodevnolife/crud-node-prisma/issues"
+  },
+  "homepage": "https://github.com/nodevnolife/crud-node-prisma#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
