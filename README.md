@@ -1,5 +1,7 @@
 # by devnolife
+
 ## _SIMPLE CRUD NODEJS WITH PRISMA JS_
+
 ![Prisma](https://i.imgur.com/h6UIYTu.png)
 
 <div align="center">
@@ -28,3 +30,59 @@
   <br />
   <hr />
 </div>
+
+## API Reference
+
+#### Get all mahasiswa
+
+```http
+  GET /all-mahasiswa
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| ``        | `string` | Untuk Semua Data Mahasiswa |
+
+#### Create mahasiswa
+
+```http
+  POST /crate-mahasiswa
+```
+
+| Body   | Type     | Description                        |
+| :----- | :------- | :--------------------------------- |
+| `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
+| `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
+
+#### Update Mahasiswa
+
+```http
+  UPDATE /update-mahasiswa/{nim}
+```
+
+| Body   | Type     | Description                        |
+| :----- | :------- | :--------------------------------- |
+| `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
+| `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
+
+#### Update Mahasiswa
+
+```http
+  UPDATE /update-mahasiswa/${nim}
+```
+
+| Parameter | Type     | Description                              |
+| :-------- | :------- | :--------------------------------------- |
+| `nim`     | `string` | **Required**.Sebagai Penanda Unik Update |
+
+| Body   | Type     | Description                        |
+| :----- | :------- | :--------------------------------- |
+| `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
+
+```http
+  DELETE /delete-mahasiswa/${nim}
+```
+
+| Parameter | Type     | Description                              |
+| :-------- | :------- | :--------------------------------------- |
+| `nim`     | `string` | **Required**.Sebagai Penanda Unik Update |

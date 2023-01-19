@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Mahasiswaa {
+  id      Int    @id @default(autoincrement())
+  nama    String
+  nim     String @unique
+  kelas   String
+  jurusan String
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model food {
+  Category                                                String? @db.VarChar(255)
+  Description                                             String? @db.VarChar(255)
+  Nutrient_Data_Bank_Number                               String? @map("Nutrient Data Bank Number") @db.VarChar(255)
+  Data_Alpha_Carotene                                     String? @map("Data.Alpha Carotene") @db.VarChar(255)
+  Data_Ash                                                String? @map("Data.Ash") @db.VarChar(255)
+  Data_Beta_Carotene                                      String? @map("Data.Beta Carotene") @db.VarChar(255)
+  Data_Beta_Cryptoxanthin                                 String? @map("Data.Beta Cryptoxanthin") @db.VarChar(255)
+  Data_Carbohydrate                                       String? @map("Data.Carbohydrate") @db.VarChar(255)
+  Data_Cholesterol                                        String? @map("Data.Cholesterol") @db.VarChar(255)
+  Data_Choline                                            String? @map("Data.Choline") @db.VarChar(255)
+  Data_Fiber                                              String? @map("Data.Fiber") @db.VarChar(255)
+  Data_Kilocalories                                       String? @map("Data.Kilocalories") @db.VarChar(255)
+  Data_Lutein_and_Zeaxanthin                              String? @map("Data.Lutein and Zeaxanthin") @db.VarChar(255)
+  Data_Lycopene                                           String? @map("Data.Lycopene") @db.VarChar(255)
+  Data_Manganese                                          String? @map("Data.Manganese") @db.VarChar(255)
+  Data_Niacin                                             String? @map("Data.Niacin") @db.VarChar(255)
+  Data_Pantothenic_Acid                                   String? @map("Data.Pantothenic Acid") @db.VarChar(255)
+  Data_Protein                                            String? @map("Data.Protein") @db.VarChar(255)
+  Data_Refuse_Percentage                                  String? @map("Data.Refuse Percentage") @db.VarChar(255)
+  Data_Retinol                                            String? @map("Data.Retinol") @db.VarChar(255)
+  Data_Riboflavin                                         String? @map("Data.Riboflavin") @db.VarChar(255)
+  Data_Selenium                                           String? @map("Data.Selenium") @db.VarChar(255)
+  Data_Sugar_Total                                        String? @map("Data.Sugar Total") @db.VarChar(255)
+  Data_Thiamin                                            String? @map("Data.Thiamin") @db.VarChar(255)
+  Data_Water                                              String? @map("Data.Water") @db.VarChar(255)
+  Data_Fat_Monosaturated_Fat                              String? @map("Data.Fat.Monosaturated Fat") @db.VarChar(255)
+  Data_Fat_Polysaturated_Fat                              String? @map("Data.Fat.Polysaturated Fat") @db.VarChar(255)
+  Data_Fat_Saturated_Fat                                  String? @map("Data.Fat.Saturated Fat") @db.VarChar(255)
+  Data_Fat_Total_Lipid                                    String? @map("Data.Fat.Total Lipid") @db.VarChar(255)
+  Data_Household_Weights_1st_Household_Weight             String? @map("Data.Household Weights.1st Household Weight") @db.VarChar(255)
+  Data_Household_Weights_1st_Household_Weight_Description String? @map("Data.Household Weights.1st Household Weight Description") @db.VarChar(255)
+  Data_Household_Weights_2nd_Household_Weight             String? @map("Data.Household Weights.2nd Household Weight") @db.VarChar(255)
+  Data_Household_Weights_2nd_Household_Weight_Description String? @map("Data.Household Weights.2nd Household Weight Description") @db.VarChar(255)
+  Data_Major_Minerals_Calcium                             String? @map("Data.Major Minerals.Calcium") @db.VarChar(255)
+  Data_Major_Minerals_Copper                              String? @map("Data.Major Minerals.Copper") @db.VarChar(255)
+  Data_Major_Minerals_Iron                                String? @map("Data.Major Minerals.Iron") @db.VarChar(255)
+  Data_Major_Minerals_Magnesium                           String? @map("Data.Major Minerals.Magnesium") @db.VarChar(255)
+  Data_Major_Minerals_Phosphorus                          String? @map("Data.Major Minerals.Phosphorus") @db.VarChar(255)
+  Data_Major_Minerals_Potassium                           String? @map("Data.Major Minerals.Potassium") @db.VarChar(255)
+  Data_Major_Minerals_Sodium                              String? @map("Data.Major Minerals.Sodium") @db.VarChar(255)
+  Data_Major_Minerals_Zinc                                String? @map("Data.Major Minerals.Zinc") @db.VarChar(255)
+  Data_Vitamins_Vitamin_A___IU                            String? @map("Data.Vitamins.Vitamin A - IU") @db.VarChar(255)
+  Data_Vitamins_Vitamin_A___RAE                           String? @map("Data.Vitamins.Vitamin A - RAE") @db.VarChar(255)
+  Data_Vitamins_Vitamin_B12                               String? @map("Data.Vitamins.Vitamin B12") @db.VarChar(255)
+  Data_Vitamins_Vitamin_B6                                String? @map("Data.Vitamins.Vitamin B6") @db.VarChar(255)
+  Data_Vitamins_Vitamin_C                                 String? @map("Data.Vitamins.Vitamin C") @db.VarChar(255)
+  Data_Vitamins_Vitamin_E                                 String? @map("Data.Vitamins.Vitamin E") @db.VarChar(255)
+  Data_Vitamins_Vitamin_K                                 String? @map("Data.Vitamins.Vitamin K") @db.VarChar(255)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model mahasiswa {
+  nim                String  @unique @db.VarChar(255)
+  nama               String? @db.VarChar(255)
+  tahun_akademik     String? @db.VarChar(255)
+  semester_mahasiswa String? @db.VarChar(255)
+  nama_mk            String? @db.VarChar(255)
+  kelas              String? @db.VarChar(255)
+  sks_matkul         String? @db.VarChar(255)
+  nilai_mutu         String? @db.VarChar(255)
+  ips                String? @db.VarChar(255)
+  ipk                String? @db.VarChar(255)
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model pulau_2022 {
+  kode  String? @db.VarChar(11)
+  nama  String? @db.VarChar(100)
+  lat   Float?
+  lng   Float?
+  notes String? @db.VarChar(50)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model stroke {
+  gender            String? @db.VarChar(255)
+  age               String? @db.VarChar(255)
+  hypertension      String? @db.VarChar(255)
+  heart_disease     String? @db.VarChar(255)
+  ever_married      String? @db.VarChar(255)
+  work_type         String? @db.VarChar(255)
+  Residence_type    String? @db.VarChar(255)
+  avg_glucose_level String? @db.VarChar(255)
+  bmi               String? @db.VarChar(255)
+  smoking_status    String? @db.VarChar(255)
+  stroke            String? @db.VarChar(255)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model wilayah {
+  kode String  @db.VarChar(13)
+  nama String? @db.VarChar(100)
+
+  @@ignore
+}
+
+model wilayah_level_1_2 {
+  kode     String  @unique(map: "kode") @db.VarChar(13)
+  nama     String? @db.VarChar(100)
+  ibukota  String? @db.VarChar(100)
+  lat      Float?
+  lng      Float?
+  elv      Float   @default(0) @db.Float
+  tz       Int?    @db.TinyInt
+  luas     Float?
+  penduduk Float?
+  path     String? @db.LongText
+  status   Int?    @db.TinyInt
+}
