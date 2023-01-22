@@ -31,6 +31,15 @@
   <hr />
 </div>
 
+
+## Install npm dependencies:
+
+```
+cd prisma-examples/typescript/rest-express
+npm install
+```
+
+
 ## API Reference
 
 #### Get all mahasiswa
