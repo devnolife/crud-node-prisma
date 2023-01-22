@@ -63,16 +63,6 @@ npm install
 | `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
 | `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
 
-#### Update Mahasiswa
-
-```http
-  UPDATE /update-mahasiswa/{nim}
-```
-
-| Body   | Type     | Description                        |
-| :----- | :------- | :--------------------------------- |
-| `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
-| `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
 
 #### Update Mahasiswa
 
