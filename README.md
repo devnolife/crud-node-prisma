@@ -35,7 +35,7 @@
 ## Install npm dependencies:
 
 ```
-cd prisma-examples/typescript/rest-express
+cd crud-node-prisma
 npm install
 ```
 
