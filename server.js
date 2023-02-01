@@ -24,11 +24,13 @@ server.get('/all-mahasiswa', async (request, response) => {
 //post atau create data mahasiswa
 server.post('/create-mahasiswa', async (request, response) => {
     try {
-        const { nama, nim } = request.body;
+        const { nama, nim, ipk, kelas } = request.body;
         const data = await prisma.mahasiswa.create({
             data: {
                 nama: nama,
-                nim: nim
+                nim: nim,
+                ipk: ipk,
+                kelas: kelas
             }
         })
         response.statusCode = 200;
@@ -86,7 +88,6 @@ server.delete('/delete-mahasiswa/:nim', async (request, response) => {
         })
     }
 })
-
 server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
