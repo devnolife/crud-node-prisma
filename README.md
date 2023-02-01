@@ -31,6 +31,15 @@
   <hr />
 </div>
 
+
+## Install npm dependencies:
+
+```
+cd crud-node-prisma
+npm install
+```
+
+
 ## API Reference
 
 #### Get all mahasiswa
@@ -54,16 +63,6 @@
 | `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
 | `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
 
-#### Update Mahasiswa
-
-```http
-  UPDATE /update-mahasiswa/{nim}
-```
-
-| Body   | Type     | Description                        |
-| :----- | :------- | :--------------------------------- |
-| `Nama` | `string` | **Required**. Untuk Nama Mahasiswa |
-| `Nim`  | `string` | **Required**. Untuk Nim Mahasiswa  |
 
 #### Update Mahasiswa
 
